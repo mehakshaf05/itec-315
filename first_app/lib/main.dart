@@ -4,7 +4,17 @@
 void main(){
   runApp(MaterialApp(home: 
   Scaffold(
-     backgroundColor: const Color.fromARGB(255, 188, 93, 125) ,
-     body:Container(child: Center(child: Text("hello world"))))
+     body: Container(
+      decoration:BoxDecoration(
+        gradient: LinearGradient(
+        begin:Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [Colors.deepPurple, Colors.indigo] )),
+      child: Center(child: Text(
+        style: TextStyle(
+           color:Colors.white
+          ,fontSize: 36
+       ),
+        "hello world"))))
     ));
 }
