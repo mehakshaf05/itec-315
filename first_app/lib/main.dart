@@ -3,6 +3,8 @@
 
 void main(){
   runApp(MaterialApp(home: 
-  Scaffold( body:Center(child: Text("hello world")))
+  Scaffold(
+     backgroundColor: const Color.fromARGB(255, 188, 93, 125) ,
+     body:Container(child: Center(child: Text("hello world"))))
     ));
 }
